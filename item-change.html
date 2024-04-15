@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="jp" class="html">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+        } else {
+            document.write('<meta name="viewport" content="width=1280">');
+        }
+        
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/top-login.css">
+    <link rel="stylesheet" href="assets/css/common-2.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js2/slick.min.js"></script>
+    <script src="https://d.shutto-translation.com/trans.js?id=1668"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'btv7ivp',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>ともはぐ｜ベビーギフト</title>
+</head>
+<body id="body">
+    <div class="Wrapper login-bg">
+        <header class="header header_bg" id="header">
+        </header>
+        <main>
+            <div class="c-inner">
+                <section class="l-section l-section--change">
+                    <div class="l-section__wrap">
+                    <!--====== WRAPPER IN ======-->
+                    <div id="wrapper">
+                    <!--====== CONTENTS IN ======-->
+                    <div id="contents">
+                        <h2 class="l-section__title">交換履歴・出荷状況照会</h2>
+                        <div class="tableInfo tableInfo--change">
+                            <h3 class="tableInfo__title--sub">全1件の交換履歴</h3>
+                            <h3 class="tableInfo__title_b">1件目 発送準備中</h3>
+                            <table>
+                                <tbody><tr>
+                                    <th>受付番号</th>
+                                    <td data-stt-ignore="">
+                                        7175001146
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>商品</th>
+                                    <td data-stt-ignore="">
+                                        おしりふきセット  （NW21-169）
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>申込受付日</th>
+                                    <td data-stt-ignore="">
+                                        2022年7月19日
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>お届け予定日</th>
+                                    <td data-stt-ignore="">
+                                        一部の商品を除き、お申込日から１か月以内にお届けいたします
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>お届け先</th>
+                                    <td data-stt-ignore="">
+                                        田中 太郎様
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div class="more--productArchive c-more mt60">
+                            <a href="" id="">トップページヘ</a>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+    
+    </div>
+    <footer id="footer">
+    </footer>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            window.K = $(document.body);
+            $.ajax({
+                url: 'header.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#header').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                });
+
+            $.ajax({
+                url: 'footer.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#footer').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                })
+
+                .always(function () {
+                    var scripts = [
+                        "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+                        "assets/js/swiper.js",
+                        "assets/js/common.js",
+                        "assets/js/text-size.js",
+                        "assets/js2/category.js",
+                        "assets/js2/common.js",
+                        "assets/js2/detail.js",
+                        "assets/js2/dialog.js",
+                        "assets/js2/favorite.js",
+                        "assets/js2/jquery.layerBoard.js",
+                    ];
+                    scripts.forEach(function (script) {
+                        $.getScript(script);
+                    });
+                });
+        });  
+    </script>
+</body>
+</html>

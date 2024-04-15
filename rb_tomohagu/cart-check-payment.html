@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="jp" class="html">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+        } else {
+            document.write('<meta name="viewport" content="width=1280">');
+        }
+        
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/top-login.css">
+    <link rel="stylesheet" href="assets/css/common-2.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js2/slick.min.js"></script>
+    <script src="https://d.shutto-translation.com/trans.js?id=1668"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'btv7ivp',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>ともはぐ｜ベビーギフト</title>
+</head>
+<body id="body">
+    <div class="Wrapper login-bg">
+        <header class="header header_bg" id="header">
+        </header>
+        <main>
+            <div class="c-inner">
+                <section class="l-section l-section--qn">
+                    <div class="l-section__wrap">
+                        <!--====== WRAPPER IN ======-->
+                        <div id="wrapper">
+                            <!--====== CONTENTS IN ======-->
+                            <div id="contents">
+                                <!-- <div class="flow">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="assets/img/cart/or_2-sp.png">
+                                    <source media="(min-width: 769px)" srcset="assets/img/cart/or_2-pc.png">
+                                    <img src="assets/img/cart/or_2-pc.png" alt="">
+                                </picture>
+                            </div> -->
+                                <div class="c-flow">
+                                    <ul class="c-flow__container">
+                                        <li class="done">
+                                            <div class="circle">
+                                                <p>入力</p>
+                                            </div>
+                                        </li>
+                                        <li class="here">
+                                            <div class="circle">
+                                                <p>確認</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="circle">
+                                                <p>完了</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <figure class="sp">
+                                        <img src="assets/img/cart/or_2-sp.png" alt="">
+                                    </figure>
+                                </div>
+                                <div class="c-top__titlebox">
+                                    <h2
+                                        class="l-section__title l-section__title--cart l-section__title--cart--sp l-section__title--cart-pading2">
+                                        お支払い方法
+                                    </h2>
+                                </div>
+
+                                <!-- <div class="payment-method">
+                                    <label><input type="radio" name="radio" class="radio" value="チェック１">クレジットカード</label>
+                                    <label><input type="radio" name="radio" class="radio" value="チェック2">コンビニ払い</label>
+                                </div> -->
+
+                                <h2
+                                    class="l-section__title l-section__title--cart l-section__title--cart--sp l-section__title--cart-pading">
+                                    クレジットカードお支払い金額
+                                </h2>
+
+                                <div class="form-wrap">
+                                    <div class="form-box1">
+                                        <form action="#" method="post">
+                                            <div class="form-inner-wrap">
+                                                <label for="name" class="form-required">名義</label>
+                                                <input type="text" autocomplete="name" id="name" placeholder=" "
+                                                    required>
+                                                <p class="text-please">半角英字で入力してください</p>
+                                            </div>
+                                            <div class="form-inner-wrap">
+                                                <label for="cc-number" class="form-required">クレジットカード番号</label>
+                                                <input type="text" autocomplete="cc-number" id="cc-number"
+                                                    inputmode="numeric" pattern="[\d ]{14,16}"
+                                                    title="14〜16桁の番号を入力してください" placeholder=" " required>
+                                                <p class="text-please">半角数字でハイフンなしで入力してください</p>
+                                            </div>
+                                            <div class="form-inner-wrap">
+                                                <label for="cc-number" class="form-required">クレジットカード有効期限</label>
+                                                <div class="form-box-wrap">
+                                                    <select name="cardExpirationYear">
+                                                        <option value="年" selected="selected">年</option>
+                                                        <option value="2023">2023</option>
+                                                        <option value="2024">2024</option>
+                                                        <option value="2025">2025</option>
+                                                    </select>
+                                                    <select name="cardExpirationMonth">
+                                                        <option value=" 月" selected="selected">月</option>
+                                                        <option value="9">09</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                    </select>
+                                                </div>
+                                                <p class="text-please">半角数字でハイフンなしで入力してください</p>
+                                            </div>
+                                            <div class="form-inner-wrap">
+                                                <label for="cc-csc" class="form-required">セキュリティコード</label>
+                                                <input type="text" autocomplete="cc-csc" id="cc-csc" placeholder=" "
+                                                    required class="security-code">
+                                                <p class="text-please">3桁のコードを入力してください</p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="form-box2">
+                                        <p class="form-box2__text">お支払いには下記カードをご利用いただけます。</p>
+                                        <figure class="form-box2__image"><img src="assets/img/card.svg" alt="クレジットカード">
+                                        </figure>
+                                        <p class="form-box2__text2">
+                                            クレジットカード処理はGMOペイメントゲートウェイ株式会社のシステムを利用し、クレジットカード情報をGMOペイメントゲートウェイ株式会社に委託しています。
+                                            （当社では、クレジットカード情報を取得、保管していません。）</p>
+                                    </div>
+                                </div>
+                                <h2 class="l-section__title l-section__title--cart l-section__title--cart--sp">
+                                    アンケートにお答えください
+                                </h2>
+                                <div class="tableInfo tableInfo--confirm">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>【1】香川県出産・子育て応援ギフト「ぎふっこギフト」をどのように知りましたか（複数回答可）</th>
+                                                <td data-stt-ignore="" class="question-group-plu">
+                                                    <div class="checkbox-item">
+                                                        <input type="checkbox" name="info" id="checkbox1">
+                                                        <label for="checkbox1">新聞・テレビ等で知った</label>
+                                                    </div>
+                                                    <div class="checkbox-item">
+                                                        <input type="checkbox" name="info" id="checkbox2">
+                                                        <label for="checkbox2">香川県公式ウェブサイトで知った</label>
+                                                    </div>
+                                                    <div class="checkbox-item">
+                                                        <input type="checkbox" name="info" id="checkbox3">
+                                                        <label for="checkbox3">市役所、保険センター等でチラシを見て知った</label>
+                                                    </div>
+                                                    <div class="checkbox-item">
+                                                        <input type="checkbox" name="info" id="checkbox4">
+                                                        <label for="checkbox4">市内の広報（電車、駅、バスなど）で知った</label>
+                                                    </div>
+                                                    <div class="checkbox-item">
+                                                        <input type="checkbox" name="info" id="checkbox5">
+                                                        <label for="checkbox5">友人、知人から聞いた</label>
+                                                    </div>
+                                                    <div class="checkbox-item">
+                                                        <input type="checkbox" name="info" id="checkbox6">
+                                                        <label for="checkbox6">案内状が届いて知った</label>
+                                                    </div>
+                                                    <div class="checkbox-item">
+                                                        <input type="checkbox" name="info" id="checkbox7">
+                                                        <label for="checkbox7">SNSなど、インターネット上の記事等で知った</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【2】プレゼントについて、申込方法はわかりやすかったですか。</th>
+                                                <td data-stt-ignore="" class="question-group">
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio1">
+                                                        <label for="radio1">分かりやすかった</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio2">
+                                                        <label for="radio2">やや分かりやすかった</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio3">
+                                                        <label for="radio3">やや分かりにくかった</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio4">
+                                                        <label for="radio4">分かりにくかった（分かりにくいと感じた点をお知らせください。）</label>
+                                                    </div>
+                                                    <div class="item__textarea">
+                                                        <input type="text" name="プレゼントの申込み方法" id="infomation"
+                                                            placeholder="" class="tableInfo__bigInput"
+                                                            data-dl-input-translation="true">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【3】プレゼントの種類や内容で、良かったと感じたものがあれば、お知らせください。</th>
+                                                <td data-stt-ignore="">
+                                                    <div class="item__textarea">
+                                                        <textarea name="「ぎふっこギフト」の満足度" id="present-content" cols="30"
+                                                            rows="4" placeholder=""
+                                                            data-dl-input-translation="true"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【4】香川県出産・子育て応援ギフト「ぎふっこギフト」のお申込みwebサイトは利用しやすかったですか。</th>
+                                                <td data-stt-ignore="" class="question-group">
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio15">
+                                                        <label for="radio15">利用しやすい</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio16">
+                                                        <label for="radio16">やや利用しやすい</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio17">
+                                                        <label for="radio17">やや利用しにくい</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio18">
+                                                        <label for="radio18">利用しにくい（利用しにくいと感じた点をお知らせください。）</label>
+                                                    </div>
+                                                    <div class="item__textarea">
+                                                        <input type="text" name="お申込みwebサイトの利用" id="infomation"
+                                                            placeholder="" class="tableInfo__bigInput"
+                                                            data-dl-input-translation="true">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【5】香川県出産・子育て応援ギフト「ぎふっこギフト」について、総合的にご満足いただけましたか。</th>
+                                                <td data-stt-ignore="">
+                                                    <div class="item__textarea">
+                                                        <textarea name="「ぎふっこギフト」の満足度" id="present-content" cols="30"
+                                                            rows="4" placeholder=""
+                                                            data-dl-input-translation="true"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【6】「ぎふっこギフト」のサイトから出産・子育てに関してあなたの役に立つ支援情報等を得ることはできましたか。</th>
+                                                <td data-stt-ignore="" class="question-group">
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio9">
+                                                        <label for="radio9">満足</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio10">
+                                                        <label for="radio10">やや満足</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio11">
+                                                        <label for="radio11">やや不満</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio12">
+                                                        <label for="radio12">不満</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【7】６の質問で「ある」と回答された方はどのような情報が役に立ちましたか。また、「ない」と回答された方はどのような情報があるとよいと思いましたか。
+                                                </th>
+                                                <td data-stt-ignore="">
+                                                    <div class="item__textarea">
+                                                        <textarea name="子育てに関しての情報" id="present-content" cols="30"
+                                                            rows="4" placeholder=""
+                                                            data-dl-input-translation="true"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【8】市町村の専用サイトにおいて、お住まいの地域に関する情報として掲載してほしいものがありましたらお知らせください。出産・子育て情報以外でも結構です。
+                                                </th>
+                                                <td data-stt-ignore="">
+                                                    <div class="item__textarea">
+                                                        <textarea name="市町村の専用サイトの情報" id="present-content" cols="30"
+                                                            rows="4" placeholder=""
+                                                            data-dl-input-translation="true"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【9】市町村窓口での手続きからプレゼントを受け取るまでに、困ったところや分かりにくかったところはありましたか。
+                                                </th>
+                                                <td data-stt-ignore="" class="question-group">
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio13">
+                                                        <label for="radio13">分かりやすかった</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio14">
+                                                        <label for="radio14">やや分かりやすかった</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio15">
+                                                        <label for="radio15">やや分かりにくかった</label>
+                                                    </div>
+                                                    <div class="radio-item">
+                                                        <input type="radio" name="info" id="radio16">
+                                                        <label for="radio16">分かりにくかった（分かりにくいと感じた点をお知らせください。）</label>
+                                                    </div>
+                                                    <div class="item__textarea">
+                                                        <input type="text" name="プレゼントの案内状" id="infomation"
+                                                            placeholder="" class="tableInfo__bigInput"
+                                                            data-dl-input-translation="true">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>【10】９の質問で「ある」と回答された場合は具体的にどのようなことか教えてください。
+                                                </th>
+                                                <td data-stt-ignore="">
+                                                    <div class="item__textarea">
+                                                        <textarea name="プレゼントの内容" id="present-content" cols="30"
+                                                            rows="4" placeholder=""
+                                                            data-dl-input-translation="true"></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="tableInfos__btns tableInfos__btns--confirm pc">
+                                    <div class="cntFtrButtons">
+                                        <button id="b_prev_pc"
+                                            class="cntFtrBtn_prev btn_gray01 btn_hover01 btn--info--fix">戻る</button>
+                                        <button id="b_next_pc"
+                                            class="cntFtrBtn_next btn_gold01 btn_hover01 btn--info btn--info--comfirm submit-link">この内容で申し込む</button>
+                                    </div>
+                                </div>
+                                <div class="tableInfos__btns tableInfos__btns--confirm sp">
+                                    <div class="cntFtrButtons">
+                                        <button id="b_next_sp"
+                                            class="cntFtrBtn_next btn_gold01 btn_hover01 btn--info btn--info--comfirm submit-link">この内容で申し込む</button>
+                                        <button id="b_prev_sp"
+                                            class="cntFtrBtn_prev btn_gray01 btn_hover01 btn--info--fix">戻る</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer id="footer">
+    </footer>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            window.K = $(document.body);
+            $.ajax({
+                url: 'header.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#header').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                });
+
+            $.ajax({
+                url: 'footer.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#footer').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                })
+
+                .always(function () {
+                    var scripts = [
+                        "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+                        "assets/js/swiper.js",
+                        "assets/js/common.js",
+                        "assets/js/text-size.js",
+                        "assets/js2/category.js",
+                        "assets/js2/common.js",
+                        "assets/js2/detail.js",
+                        "assets/js2/dialog.js",
+                        "assets/js2/favorite.js",
+                        "assets/js2/jquery.layerBoard.js",
+                    ];
+                    scripts.forEach(function (script) {
+                        $.getScript(script);
+                    });
+                });
+        });  
+    </script>
+</body>
+</html>

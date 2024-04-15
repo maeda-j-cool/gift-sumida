@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="jp" class="html">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+        } else {
+            document.write('<meta name="viewport" content="width=1280">');
+        }
+        
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/top-login.css">
+    <link rel="stylesheet" href="assets/css/common-2.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js2/slick.min.js"></script>
+    <script src="https://d.shutto-translation.com/trans.js?id=1668"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'btv7ivp',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>ともはぐ｜ベビーギフト</title>
+</head>
+<body id="body">
+    <div class="Wrapper login-bg">
+        <header class="header header_bg" id="header">
+        </header>
+
+        <main>
+            
+            
+            <section class="login-mypege">
+                <h2 class="l-section__title">マイページ</h2>
+                <h3 class="l-section__title__welcome">ようこそ / 田中 太郎様</h3>
+                
+                <div class="mypage-box">
+                    <ul class="mypageNav">
+                        <li class="mypageNav-card">
+                            <a href="#">
+                                <figure>
+                                <img src="assets/img/mypage01.svg" alt="お気に入り商品一覧">
+                                </figure>
+                                <p class="mypageNav-card-txt">お気に入り商品一覧</p>
+                            </a>
+                        </li>
+                        <li class="mypageNav-card">
+                            <a href="#">
+                                <figure>
+                                    <img src="assets/img/mypage02.svg" alt="利用者登録情報/パスワードの変更">
+                                </figure>
+                                <p class="mypageNav-card-txt">利用者登録情報/<br>パスワードの変更</p>
+                            </a>
+                        </li>
+                        <li class="mypageNav-card">
+                            <a href="#">
+                                <img src="assets/img/mypage03.svg" alt="ID番号の追加・登録ID番号一覧">
+                                <p class="mypageNav-card-txt">ID番号の追加・<br>登録ID番号一覧</p>
+                            </a>
+                        </li>
+                        <li class="mypageNav-card">
+                            <a href="#">
+                                <img src="assets/img/mypage04.svg" alt="交換履歴一覧">
+                                <p class="mypageNav-card-txt">交換履歴一覧</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            
+            <!-- <article class="login-related pc-none">
+                <section class="login-related__box">
+                    <div class="item">
+                        <figure class="item__image"><img src="assets/img/sp/product-list.png" alt=""></figure>
+                        <p class="item__text">商品一覧</p>
+                    </div>
+                    <div class="item">
+                        <figure class="item__image"><img src="assets/img/sp/support-portal.png" alt=""></figure>
+                        <p class="item__text">子育て支援ポータル</p>
+                    </div>
+                    <div class="item">
+                        <figure class="item__image"><img src="assets/img/sp/FAQ.png" alt=""></figure>
+                        <p class="item__text">よくあるご質問</p>
+                    </div>
+                    <div class="item">
+                        <figure class="item__image"><img src="assets/img/sp/inquiry.png" alt=""></figure>
+                        <p class="item__text">お問い合わせ</p>
+                    </div>
+                </section>
+            </article> -->
+
+        </main>
+    </div>
+
+    <footer id="footer">
+    </footer>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            window.K = $(document.body);
+            $.ajax({
+                url: 'header.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#header').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                });
+
+            $.ajax({
+                url: 'footer.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#footer').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                })
+
+                .always(function () {
+                    var scripts = [
+                        "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+                        "assets/js/swiper.js",
+                        "assets/js/common.js",
+                        "assets/js/text-size.js",
+                        "assets/js2/category.js",
+                        "assets/js2/common.js",
+                        "assets/js2/detail.js",
+                        "assets/js2/dialog.js",
+                        "assets/js2/favorite.js",
+                        "assets/js2/jquery.layerBoard.js",
+                    ];
+                    scripts.forEach(function (script) {
+                        $.getScript(script);
+                    });
+                });
+        });  
+    </script>
+</body>
+</html>

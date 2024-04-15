@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="jp" class="html">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+        } else {
+            document.write('<meta name="viewport" content="width=1280">');
+        }
+        
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/top-login.css">
+    <link rel="stylesheet" href="assets/css/common-2.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js2/slick.min.js"></script>
+    <script src="https://d.shutto-translation.com/trans.js?id=1668"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'btv7ivp',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>ともはぐ｜ベビーギフト</title>
+</head>
+<body id="body">
+    <div class="Wrapper">
+        <header class="header header_bg" id="header">
+        </header>
+
+        <!-- modal_entry  -->
+        <div class="modal-container modal-container-entry active" id="modalentry">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="modal-content__wrapper">
+                        <span class="modal-close"><img src="assets/img/modal-close.png" alt="モーダルクローズボタン"></span>
+                        <h2 class="l-section__modaltitle">只今ご利用情報登録中です</h2>
+                        <div class="p-login__goods">
+                            <button class="p-login__goods--btn" type="submit" value="" name="">交換はせず商品を見たい方はこちら</button>
+                        </div>
+                        <div class="p-login__note p-login__note__center">
+                            <p>
+                                ※1週間以上たっても利用できない方はこちらへご連絡ください。
+                            </p>
+                        </div>
+                        <div class="modal-btn">
+                            <button class="p-login__form--btn" type="submit" value="" name="">メールをおくる</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./  -->
+        <main id="top-main">
+            <article class="mv-top">
+                <div class="mv-top__inner">
+                    <figure class="main-character"><img src="assets/img/main-character.png" alt=""></figure>
+                    <div class="title-box">
+                        <h1 class="title">香川県出産・子育て応援ギフト<span class="span">
+                                <figure class="title__image"><img src="assets/img/mv-text.png" alt="ぎふっこギフト"></figure>
+                            </span></h1>
+                    </div>
+                    <div class="top-explanation">
+                        <section class="explanation">
+                            <p>香川県出産・子育て応援ギフト「ぎふっこギフト」は、<br
+                                    class="sp-none">子育て家庭が子どもの誕生を喜び、笑顔や希望をもって子育てをスタートできるよう、様々な商品をご用意しております。<br>
+                                プレゼントされたポイントを利用し、このサイトから各ご家庭の必要に応じた商品をお選びいただけます。</p>
+                        </section>
+                        <div class="btn-wrap">
+                            <p class="btn-margin">
+                                <a href="#" class="btn-first modal-first">初回登録はこちら</a>
+                            </p>
+                            <p>
+                                <a href="#" class="btn-login modal-login">ログインはこちら</a>
+                            </p>
+                        </div>
+                        <div class="top-others">
+                            <p>交換はせず商品を見たい方はこちら</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="news">
+                    <div class="news-wrap">
+                        <h2 class="news-title">お知らせ</h2>
+                        <ol>
+                            <li class="news-box">
+                                <a href="#">
+                                    <p class="news-time">2022/08/02</p>
+                                    <h3 class="news-sub-title"><span class="underline">[ご案内]お申し込みは保有ポイントをお</span><span
+                                            class="underline">持ちであれば何度でも可能です。</span></h3>
+                                    <p class="news-text">[注意]<br>
+                                        有効期限を過ぎますとポイントは失効します。<br>
+                                        ログインに複数回失敗しますと、アカウントがロックされます。<br>
+                                        アカウントロックの解除については、フリーコール（0120-000-000）へお問い合わせください。</p>
+                                </a>
+                            </li>
+                            <li class="news-box">
+                                <a href="#">
+                                    <p class="news-time">2022/08/02</p>
+                                    <h3 class="news-sub-title"><span class="underline">香川県出産・子育て応援ギフト ぎふっこ</span><span
+                                            class="underline">ギフト　WEBサイトオープンしました。</span></h3>
+                                    <p class="news-text">
+                                        香川県出産・子育て応援ギフト
+                                        ぎふっこギフトは、子育て家庭が子どもの誕生を喜び、笑顔や希望をもって子育てをスタートできるよう、子育てに必要なモノやサービス等を、各ご家庭のニーズに合わせて選択できる形でお届けすることで、香川県が保護者に寄り添い、一緒に子育てをするという応援メッセージを伝えるものです。<br>プレゼントされたポイントを利用し、このサイトから各ご家庭の必要に応じた商品をお選びいただけます。
+                                    </p>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+
+            <div class="background-color"></div>
+
+            <article class="top-gallery">
+                <section class="top-gallery__inner">
+                    <div class="top-gallery__wrap">
+                        <h2 class="gallery-sub-title">わたしと赤ちゃんギャラリー</h2>
+                        <p class="gallery-text">あなたのワクワクをInstagramに<br class="pc-none"><span
+                                class="gallery-text__span">＃ぎふっこ</span>をつけて投稿してください。</p>
+                        <p class="gallery-text">Official Instagramから掲載のご連絡をいたします。</p>
+                    </div>
+                    <div class="gallery-photo">
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy1.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy2.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy3.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy4.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy5.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy6.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy7.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy8.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy9.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy10.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy11.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy12.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy13.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy14.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy15.png" alt=""></a></figure>
+                        <figure class="photograph"><a href="#"><img src="assets/img/galy16.png" alt=""></a></figure>
+                    </div>
+                </section>
+            </article>
+
+            <article class="child-rearing">
+                <div class="child-rearing__wrap">
+                    <h2 class="child-sub-title">子育て支援ポータル</h2>
+                    <p class="child-text">香川県はお子さまの健やかな成長を願って、さまざまな形で皆さまの子育てを応援しています。</p>
+                    <div class="region">
+                        <span class="region__text">お住いの地域を選択してください</span>
+                        <div class="select-wrap">
+                            <select name="香川県">
+                                <option value="岐阜市">岐阜市</option>
+                                <option value="大垣市">大垣市</option>
+                                <option value="関市">関市</option>
+                                <option value="中津川市">中津川市</option>
+                                <option value="高山市">高山市</option>
+                                <option value="羽島市">羽島市</option>
+                                <option value="美濃市">美濃市</option>
+                                <option value="各務原市">各務原市</option>
+                                <option value="恵那市">恵那市</option>
+                                <option value="山県市">山県市</option>
+                                <option value="可児市">可児市</option>
+                                <option value="関ケ原町">関ケ原町</option>
+                                <option value="海津市">海津市</option>
+                                <option value="瑞多治見市">多治見市</option>
+                                <option value="本巣市">本巣市</option>
+                                <option value="安八町">安八町</option>
+                                <option value="飛騨市">飛騨市</option>
+                                <option value="瑞浪市">瑞浪市</option>
+                                <option value="郡上市">郡上市</option>
+                                <option value="八百津町">八百津町</option>
+                                <option value="輪之内町">輪之内町</option>
+                                <option value="御嵩町">御嵩町</option>
+                                <option value="美濃加茂市">美濃加茂市</option>
+                                <option value="瑞穂市">瑞穂市</option>
+                                <option value="養老町">養老町</option>
+                                <option value="坂祝町">坂祝町</option>
+                                <option value="下呂市">下呂市</option>
+                                <option value="白川町">白川町</option>
+                                <option value="富加町">富加町</option>
+                                <option value="垂井町">垂井町</option>
+                                <option value="大野町">大野町</option>
+                                <option value="北方町">北方町</option>
+                                <option value="土岐市">土岐市</option>
+                                <option value="揖斐川町">揖斐川町</option>
+                                <option value="笠松町">笠松町</option>
+                                <option value="川辺町">川辺町</option>
+                                <option value="池田町">池田町</option>
+                                <option value="七宗町">七宗町</option>
+                                <option value="岐南町">岐南町</option>
+                                <option value="東白川村">東白川村</option>
+                                <option value="白川村">白川村</option>
+                                <option value="神戸町">神戸町</option>
+                                <option value="太田町">太田町</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- タブ力替え -->
+                    <div class="tabs">
+                        <input id="all" type="radio" name="tab_item" checked>
+                        <label class="tab_item" for="all">知る</label>
+                        <input id="programming" type="radio" name="tab_item">
+                        <label class="tab_item" for="programming">支援をうける</label>
+                        <input id="design" type="radio" name="tab_item">
+                        <label class="tab_item" for="design">預ける</label>
+                        <input id="guidance" type="radio" name="tab_item">
+                        <label class="tab_item" for="guidance">相談窓口案内</label>
+                        <div class="tab_content portal-box" id="all_content">
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/portal_column.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/portal_column.png">
+                                        <img src="assets/img/portal_column.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category sp-none">コラム</p>
+                                    <p class="portal-category2 pc-none">支援情報</p>
+                                    <p class="upper-row-text"><span class="underline">ぎふっこカードについ</span><span
+                                            class="underline">て知る</span></p>
+                                    <p class="lower-row-text">ぎふ子育て応援団ページへ</p>
+                                </section>
+                            </a>
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/portal_support.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/portal_support.png">
+                                        <img src="assets/img/portal_support.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category2">支援情報</p>
+                                    <p class="upper-row-text"><span class="underline">香川県の子育て支援を</span>知る</p>
+                                    <p class="lower-row-text">ぎふ子育て応援団ページへ</p>
+                                </section>
+                            </a>
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/portal_health.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/portal_health.png">
+                                        <img src="assets/img/portal_health.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category3">健康</p>
+                                    <p class="upper-row-text"><span class="underline">母と子の健康を守る制</span>度について知る</p>
+                                    <p class="lower-row-text">ぎふ子育て応援団ページへ</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/portal_.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/portal_.png">
+                                        <img src="assets/img/portal_.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category4">施設情報</p>
+                                    <p class="middle-row-text"><span class="underline">子どもの一時預かりや親子交流事業</span><br
+                                            class="sp-none"><span class="underline">について知る</span></p>
+                                    <p class="lower-row-text">nico nico（マーサ２１）</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/portal_column2.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/portal_column2.png">
+                                        <img src="assets/img/portal_column2.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category5">コラム</p>
+                                    <p class="middle-row-text"><span class="underline">ご家庭等での幼児教育</span><span
+                                            class="underline">について学ぶ</span></p>
+                                    <p class="lower-row-text">のびのび育て ぎふっ子</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/portal_faq.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/portal_faq.png">
+                                        <img src="assets/img/portal_faq.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category6">FAQ</p>
+                                    <p class="middle-row-text"><span class="underline">子育てのよくある質問</span><span
+                                            class="underline">を見る</span></p>
+                                    <p class="lower-row-text">ぎふ子育て応援団ページへ</p>
+                                </section>
+                            </a>
+                        </div>
+                        <div class="tab_content" id="programming_content">
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/support1.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/support1.png">
+                                        <img src="assets/img/support1.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category2">支援情報</p>
+                                    <p class="upper-row-text"><span class="underline">子育て家庭の経済支援について</span></p>
+                                    <p class="lower-row-text">ぎふ子育て応援団ページへ</p>
+                                </section>
+                            </a>
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/support2.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/portal_support.png">
+                                        <img src="assets/img/portal_support.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category2">支援情報</p>
+                                    <p class="upper-row-text"><span class="underline">ひとり親家庭への支援について</span></p>
+                                    <p class="lower-row-text">ぎふ子育て応援団ページへ</p>
+                                </section>
+                            </a>
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/support3.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/support3.png">
+                                        <img src="assets/img/support3.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category2">支援情報</p>
+                                    <p class="upper-row-text"><span class="underline">奨学金について</span></p>
+                                    <p class="lower-row-text">中高生のための進学応援BOOK</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/support4.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/support4.png">
+                                        <img src="assets/img/support4.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category2">支援情報</p>
+                                    <p class="middle-row-text"><span class="underline">男性の育児参画支援について知る</span></p>
+                                    <p class="lower-row-text">ぎふし共育都市プロジェクト<br>男性の育児参画支援</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/support5.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/support5.png">
+                                        <img src="assets/img/support5.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category2">支援情報</p>
+                                    <p class="middle-row-text"><span class="underline">働くママ・パパの子育て支援制度</span><span
+                                            class="underline">について</span></p>
+                                    <p class="lower-row-text">ぎふ子育て応援団ページへ</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/support6.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/support6.png">
+                                        <img src="assets/img/support6.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-category2">支援情報</p>
+                                    <p class="middle-row-text"><span class="underline">障がいのある子どもの支援について</span></p>
+                                    <p class="lower-row-text">香川県の子育て支援情報を見る</p>
+                                </section>
+                            </a>
+                        </div>
+                        <div class="tab_content" id="design_content">
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/institution1.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/institution1.png">
+                                        <img src="assets/img/institution1.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-support">サポート</p>
+                                    <p class="upper-row-text"><span class="underline">ファミサポを利用してみませんか？</span></p>
+                                    <p class="lower-row-text">香川県の子育て支援情報へ</p>
+                                </section>
+                            </a>
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/institution2.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/institution2.png">
+                                        <img src="assets/img/institution2.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-institution">施設情報</p>
+                                    <p class="upper-row-text"><span class="underline">児童館・児童センターを探す</span></p>
+                                    <p class="lower-row-text">児童健全育成事業</p>
+                                </section>
+                            </a>
+                            <a href="#" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/institution3.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/institution3.png">
+                                        <img src="assets/img/institution3.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-institution">施設情報</p>
+                                    <p class="upper-row-text"><span class="underline">ぎふっこ保育園について</span></p>
+                                    <p class="lower-row-text">ぎふ子育て応援団ページへ</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/institution4.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/institution4.png">
+                                        <img src="assets/img/institution4.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-institution">施設情報</p>
+                                    <p class="middle-row-text"><span class="underline">男性の育児参画支援について知る</span></p>
+                                    <p class="lower-row-text">地域子育て支援センター　施設一覧</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/institution5.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/institution5.png">
+                                        <img src="assets/img/institution5.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-institution">施設情報</p>
+                                    <p class="middle-row-text"><span class="underline">地域子育て支援センターからの</span><span
+                                            class="underline">お知らせ</span></p>
+                                    <p class="lower-row-text">地域子育て支援センターからのお知らせ</p>
+                                </section>
+                            </a>
+                            <a href="" class="item-link">
+                                <div class="portal-item">
+                                    <picture class="portal-image">
+                                        <source media="(min-width: 1024px)" srcset="assets/img/institution6.png">
+                                        <source media="(max-width: 768px)" srcset="assets/img/institution6.png">
+                                        <img src="assets/img/institution6.png" alt="">
+                                    </picture>
+                                </div>
+                                <section class="portal-item__box">
+                                    <p class="portal-institution">施設情報</p>
+                                    <p class="middle-row-text"><span class="underline">子育て支援スペース　みなたん</span></p>
+                                    <p class="lower-row-text">ぎふ清流文化プラザ子育て支援スペース<br>
+                                        みなたんのご紹介</p>
+                                </section>
+                            </a>
+                        </div>
+                        <div class="tab_content" id="guidance_content">
+                            <section class="guidance_section">
+                                <h3 class="portal-sub-title">ひとりで悩んでいませんか？</h3>
+                                <div class="guidance_wrap">
+                                    <p class="guidance_text"><span class="span">「誰も私の悩みはわかってもらえない」</span>、<span
+                                            class="span">「こんなことができないのは私の子（私）だけ」</span>などと思い込むことはありませんか？</p>
+                                    <p>まずはお気軽にご相談ください。</p>
+                                </div>
+                            </section>
+                            <section class="guidance">
+                                <div class="guidance_box">
+                                    <div class="guidance_box__item">
+                                        <a href="tel:092-833-3000 ">
+                                            <h4 class="item-title">だれでも、どこからでも相談できます。</h4>
+                                            <div class="guidance_box__inner">
+                                                <div class="div">
+                                                    <p class="guidance-text">子ども・家庭電話相談室【電話相談】</p>
+                                                    <p class="guidance-tel">092-833-3000 </p>
+                                                    <p class="guidance-annotation">24時間対応(年末年始を除く)</p>
+                                                </div>
+                                                <picture class="guidance-image">
+                                                    <source media="(min-width: 1024px)"
+                                                        srcset="assets/img/consultation1.png">
+                                                    <source media="(max-width: 768px)"
+                                                        srcset="assets/img/sp/consultation1.png">
+                                                    <img src="assets/img/consultation1.png" alt="">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="guidance_box__item">
+                                        <a href="tel:#8000">
+                                            <h4 class="item-title">困った時は、あわてずにこちらにお電話ください。</h4>
+                                            <div class="guidance_box__inner">
+                                                <div class="div">
+                                                    <p class="guidance-text">子ども医療電話相談<br>（休日・夜間の電話相談）</p>
+                                                    <p class="guidance-tel">#8000</p>
+                                                    <p class="guidance-annotation">または058-240-4199</p>
+                                                </div>
+                                                <picture class="guidance-image">
+                                                    <source media="(min-width: 1024px)"
+                                                        srcset="assets/img/consultation2.png">
+                                                    <source media="(max-width: 768px)"
+                                                        srcset="assets/img/sp/consultation2.png">
+                                                    <img src="assets/img/consultation2.png" alt="">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="guidance_box">
+                                    <div class="guidance_box__item">
+                                        <a href="tel:189">
+                                            <h4 class="item-title">子どもの虐待に関する連絡を24時間365日受け付けています</h4>
+                                            <div class="guidance_box__inner">
+                                                <div class="div">
+                                                    <p class="guidance-text">児童相談所虐待対応ダイヤル</p>
+                                                    <p class="guidance-tel">189</p>
+                                                    <p class="guidance-annotation">※一部のIP電話からはかかりません。</p>
+                                                    <p class="guidance-annotation">※通話料無料。</p>
+                                                </div>
+                                                <picture class="guidance-image">
+                                                    <source media="(min-width: 1024px)"
+                                                        srcset="assets/img/consultation3.png">
+                                                    <source media="(max-width: 768px)"
+                                                        srcset="assets/img/sp/consultation3.png">
+                                                    <img src="assets/img/consultation3.png" alt="">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="guidance_box__item">
+                                        <a href="tel:058-272-1111">
+                                            <h4 class="item-title">ぎふっこカードの制度に関するお問い合わせ</h4>
+                                            <div class="guidance_box__inner">
+                                                <div class="div">
+                                                    <p class="guidance-text">ぎふっこカードの制度に関する</p>
+                                                    <p class="guidance-text">お問い合わせ</p>
+                                                    <p class="guidance-tel">058-272-1111</p>
+                                                    <p class="guidance-annotation">また平日午前8時30分から午後5時15分</p>
+                                                </div>
+                                                <picture class="guidance-image">
+                                                    <source media="(min-width: 1024px)"
+                                                        srcset="assets/img/consultation4.png">
+                                                    <source media="(max-width: 768px)"
+                                                        srcset="assets/img/sp/consultation4.png">
+                                                    <img src="assets/img/consultation4.png" alt="">
+                                                </picture>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- タブ力替えー終わり -->
+                    </div>
+            </article>
+
+            <article class="connection">
+                <h2 class="connection__sub-title">関連情報</h2>
+                <div class="connection-image">
+                    <div class="connection-box">
+                        <figure class="connection-item"><a href="#"><img src="assets/img/connection1.png" alt=""></a>
+                        </figure>
+                        <figure class="connection-item"><a href="#"><img src="assets/img/connection2.png" alt=""></a>
+                        </figure>
+                    </div>
+                </div>
+            </article>
+
+            <article class="question-top">
+                <div class="question-top__inner">
+                    <h2 class="question-top__sub-title">よくあるご質問</h2>
+                    <div id="container">
+                        <div id="main-area" class="faq">
+                            <section id="area-1" class="list">
+                                <!-- QAアコーディオン -->
+                                <ul class="accordion-area">
+                                    <li class="accordion-area__list">
+                                        <section>
+                                            <dl>
+                                                <div class="question accordion-sub-title">
+                                                    <dt class="accordion-area__title sp-none">香川県出産・子育て応援ギフトとは</dt>
+                                                    <dt class="accordion-area__title pc-none"><span
+                                                            class="accordion-area-span">香川県出産・子育て応援ギフト</span><br><span
+                                                            class="accordion-area-span">ぎみっくとは</span></dt>
+                                                </div>
+                                                <div class="answer_box">
+                                                    <dd class="line">
+                                                        出産され、育児をされる皆様を応援したいという気持ちから、香川県出産・子育て応援事業を実施しています。ミルクやおむつ、育児用品、ベビーシッターサービスなど、これからの子育てに役立つ様々なものをご用意しておりますので、ぜひご活用ください。
+                                                    </dd>
+                                                </div>
+                                            </dl>
+                                        </section>
+                                    </li>
+                                    <li class="accordion-area__list">
+                                        <section>
+                                            <dl>
+                                                <div class="question accordion-sub-title">
+                                                    <dt class="accordion-area__title"><span
+                                                            class="accordion-area-span">個人情報のお取り扱いについて</span></dt>
+                                                </div>
+                                                <div class="answer_box accordion-section content">
+                                                    <dd class="line">
+                                                        出産され、育児をされる皆様を応援したいという気持ちから、香川県出産・子育て応援事業を実施しています。ミルクやおむつ、育児用品、ベビーシッターサービスなど、これからの子育てに役立つ様々なものをご用意しておりますので、ぜひご活用ください。
+                                                    </dd>
+                                                </div>
+                                            </dl>
+                                        </section>
+                                    </li>
+                                    <li class="accordion-area__list">
+                                        <section>
+                                            <dl>
+                                                <div class="question">
+                                                    <dt class="accordion-area__title accordion-sub-title"><span
+                                                            class="accordion-area-span">アカウントにログインできない</span>
+                                                        </h3>
+                                                </div>
+                                                <div class="answer_box accordion-section">
+                                                    <dd class="line">
+                                                        出産され、育児をされる皆様を応援したいという気持ちから、香川県出産・子育て応援事業を実施しています。ミルクやおむつ、育児用品、ベビーシッターサービスなど、これからの子育てに役立つ様々なものをご用意しておりますので、ぜひご活用ください。
+                                                    </dd>
+                                                </div>
+                                            </dl>
+                                        </section>
+                                    </li>
+                                </ul>
+                                <!-- QAアコーディオン -->
+                            </section> <!-- area-1 -->
+                        </div>
+                    </div>
+                    <p class="see-more"><a href="#"><span class="see-more__span">もっとみる</span></a></p>
+                </div>
+            </article>
+
+            <article class="top-thanks">
+                <section class="top-thanks__wrap">
+                    <p class="thanks-text">このたびは、赤ちゃんのご誕生、誠におめでとうございます。</p>
+                    <p class="thanks-text">ご家族のみなさまに心からお祝い申し上げます。</p>
+                    <p class="thanks-text">生まれた命を祝福するとともに、</p>
+                    <p class="thanks-text">少しでも子育てを応援したいという気持ちから</p>
+                    <p class="thanks-text">“香川県出産・子育て応援事業” を実施いたします。</p>
+                    <p class="thanks-text">ミルクやおむつ、育児用品など多様なプレゼント用品を<br class="sp-none">ご用意しておりますので、<br
+                            class="sp-none">ぜひご活用ください。</p>
+                    <p class="thanks-text">これからも、香川県でご家族のみなさまと赤ちゃんが、<br
+                            class="sp-none">いつまでも健やかな日々をすごされることを心よりお祈りしております。</p>
+                </section>
+                <div class="thanks-btn">
+                    <div class="first-btn">
+                        <p><a href="#" class="modal-first">初回登録はこちら</a>
+                        <p>
+                    </div>
+                    <div class="login-btn">
+                        <p><a href="#" class="modal-login">ログインはこちら</a></p>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+
+    <footer id="footer">
+    </footer>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            window.K = $(document.body);
+            $.ajax({
+                url: 'header_top.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#header').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                });
+
+            $.ajax({
+                url: 'footer.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#footer').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                })
+
+                .always(function () {
+                    var scripts = [
+                        "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+                        "assets/js/swiper.js",
+                        "assets/js/common.js",
+                        "assets/js/text-size.js",
+                        "assets/js2/category.js",
+                        "assets/js2/common.js",
+                        "assets/js2/detail.js",
+                        "assets/js2/dialog.js",
+                        "assets/js2/favorite.js",
+                        "assets/js2/jquery.layerBoard.js",
+                    ];
+                    scripts.forEach(function (script) {
+                        $.getScript(script);
+                    });
+                });
+        });
+    </script>
+    <script src="assets/js2/form.js"></script>
+    <script>
+        $(function () {
+            var $sample = $('#popup_sample');
+            $('.p-login__cap--btn2').on('click', function () {
+                $sample.fadeIn();
+                return false;
+            });
+            $('.btn_close', $sample).on('click', function () {
+                $sample.fadeOut();
+                return false;
+            });
+            $('.layer_board_bg', $sample).on('click', function () {
+                $sample.fadeOut();
+                return false;
+            });
+        });
+        $(document).ready(function () {
+            $(function () {
+                var $sample = $('#popup_sample');
+                $('.p-login__cap--btn2').on('click', function () {
+                    $sample.fadeIn();
+                    return false;
+                });
+                $('.btn_close', $sample).on('click', function () {
+                    $sample.fadeOut();
+                    return false;
+                });
+                $('.layer_board_bg', $sample).on('click', function () {
+                    $sample.fadeOut();
+                    return false;
+                });
+            });
+            // すべての.tabsを隠す
+            $('.tabs').hide();
+            $('.tab_content').hide();
+
+            // 各.tabsごとに最初の.tab_itemにクラスを追加
+            $('.tabs').each(function () {
+                $(this).find('.tab_item').first().addClass('tab_item_active');
+            });
+
+            // select[name="gifushi"]の選択されているインデックスに基づいて、対応する.tabsを表示
+            var initialSelectedIndex = $('select[name="gifushi"]').prop('selectedIndex');
+            $('.tabs').eq(initialSelectedIndex).show();
+            $('.tabs').eq(initialSelectedIndex).find('.tab_content').first().css('display', 'flex');
+
+            // セレクト要素（name="gifushi"）の値が変更されたときの処理
+            $('select[name="gifushi"]').change(function () {
+                var selectedIndex = $(this).prop('selectedIndex');
+                var selectedTabs = $('.tabs').eq(selectedIndex);
+
+                // 選択されたインデックスに対応する.tabsが存在しない場合、処理をスキップ
+                if (!selectedTabs.length) return;
+
+                $('.tabs').hide(); // すべての.tabsを隠す
+                selectedTabs.show(); // 選択された.tabsを表示
+                selectedTabs.find('.tab_content').first().css('display', 'flex');
+            });
+
+            // タブ内の各ラベルがクリックされたときの処理
+            $('.tabs .tab_item').click(function () {
+                var tabIndex = $(this).parent().children('.tab_item').index(this);
+                var tabsContainer = $(this).closest('.tabs');
+                tabsContainer.find('.tab_content').hide();
+                tabsContainer.find('.tab_content').eq(tabIndex).css('display', 'flex');
+                $('.tab_item').removeClass('tab_item_active');
+                $(this).addClass('tab_item_active');
+            });
+        });
+    </script>
+</body>
+</html>

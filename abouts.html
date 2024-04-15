@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="jp" class="html">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+        } else {
+            document.write('<meta name="viewport" content="width=1280">');
+        }
+        
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/top-login.css">
+    <link rel="stylesheet" href="assets/css/common-2.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <link rel="stylesheet" href="assets/css/dialog.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js2/slick.min.js"></script>
+    <script src="https://d.shutto-translation.com/trans.js?id=1668"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'btv7ivp',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>ともはぐ｜ベビーギフト</title>
+</head>
+<body id="body">
+    <div class="Wrapper login-bg">
+        <header class="header header_bg" id="header">
+        </header>
+    </div>
+    <div id="abouts-container" class="clearfix sp-none">
+        <div id="main_column" class="colnum1"><!-- ▼メイン -->
+
+            <link rel="stylesheet" type="text/css" href="/user_data/packages/default/res/guide/css/common.css">
+
+            <div id="undercolumn">
+
+                <div id="undercolumn_aboutus">
+                    <h2 class="title">当サイトについて</h2>
+
+                    <table summary="当サイトについて">
+                        <colgroup>
+                            <col width="20%">
+                            <col width="80%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>名称</th>
+                                <td>東京都出産・子育て応援事業ポイント交換サイト「赤ちゃんファースト」</td>
+                            </tr>
+
+                            <tr>
+                                <th>会社名</th>
+                                <td>東京都委託事業者 株式会社ハーモニック</td>
+                            </tr>
+
+                            <tr>
+                                <th>所在地</th>
+                                <td>〒955-8567<br>新潟県三条市北入蔵3-10-20</td>
+                            </tr>
+
+                            <tr>
+                                <th>電話番号</th>
+                                <td>0120-922-283</td>
+                            </tr>
+
+
+                            <tr>
+                                <th>営業時間</th>
+                                <td>9:00〜18:00/年中無休(年末年始を除く)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div id="maps"></div>
+                </div>
+            </div><!-- ▲メイン -->
+        </div>
+    </div>
+
+    <div id="main-content" class="pc-none">
+
+        <!-- ▼メイン -->
+
+        <section id="undercolumn">
+            <!--☆当サイトについて -->
+            <h2 class="title">当サイトについて</h2>
+
+            <dl class="form_info">
+                <dt>名称</dt>
+                <dd>東京都出産・子育て応援事業ポイント交換サイト「赤ちゃんファースト」</dd>
+
+                <dt>会社名</dt>
+                <dd>東京都委託事業者 株式会社ハーモニック</dd>
+
+                <dt>所在地</dt>
+                <dd>〒955-8567<br>
+                    新潟県三条市北入蔵3-10-20</dd>
+
+                <dt>電話番号</dt>
+                <dd>0120-922-283</dd>
+
+
+                <dt>営業時間</dt>
+                <dd>9:00〜18:00/年中無休(年末年始を除く)</dd>
+
+
+            </dl>
+
+        </section>
+
+        <!--▼検索バー -->
+        <!--▲検索バー --> <!-- ▲メイン -->
+
+    </div>
+
+    <footer id="footer">
+    </footer>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            window.K = $(document.body);
+            $.ajax({
+                url: 'header.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#header').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                });
+
+            $.ajax({
+                url: 'footer.html',
+                type: 'GET',
+                dataType: 'html'
+            })
+                .done(function (data) {
+                    $('#footer').replaceWith(data);
+                })
+                .fail(function () {
+                    console.error('ヘッダーを読み込めませんでした');
+                })
+
+                .always(function () {
+                    var scripts = [
+                        "https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js",
+                        "assets/js/swiper.js",
+                        "assets/js/common.js",
+                        "assets/js/text-size.js",
+                        "assets/js2/category.js",
+                        "assets/js2/common.js",
+                        "assets/js2/detail.js",
+                        "assets/js2/dialog.js",
+                        "assets/js2/favorite.js",
+                        "assets/js2/jquery.layerBoard.js",
+                    ];
+                    scripts.forEach(function (script) {
+                        $.getScript(script);
+                    });
+                });
+        });  
+    </script>
+</body>
+</html>
