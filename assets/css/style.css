@@ -2,7 +2,7 @@
 :root {
   --color-main: #EBEBEB;
   --color-sub: #F9EDE1;
-  --color-button: #D84800;
+  --color-button: #CE4074;
   --color-text: #000000;
   --color-title:#D84800;
 }
@@ -2435,10 +2435,7 @@ html.no-scroll {
     display: block;
   }
   .header_inner {
-    background-image: url(../img/sp/bg_treat1.png);
-    background-size: cover;
-    background-position: top;
-    height: 200px;
+    height: 0;
   }
   .button {
     display: inline-block;
@@ -2466,9 +2463,9 @@ html.no-scroll {
     margin: 0 auto 20px;
   }
   .explanation p {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 15px 0;
   }
   .explanation::before {
     content: "";
@@ -2502,20 +2499,20 @@ html.no-scroll {
   }
   
   .mv-top__inner {
-    background: rgba(255, 255, 255, 0.8);
+    /* background: rgba(255, 255, 255, 0.8); */
     width: 100%;
     /* width: 90%; */
     margin: 0 auto;
     /* border-radius: 8px; */
   }
   .mv-top .mv-top__inner {
-    height: 200px;
     /* height: 36vh; */
-    padding-top: 50px;
+    padding-top: 36px;
+    width: 84%;
   }
   .explanation {
     width: 100%;
-    margin: 0 auto 50px;
+    margin: 0 auto;
     font-size: 1.8rem;
     color: #000000;
     max-width: initial;
@@ -2532,36 +2529,37 @@ html.no-scroll {
 	display: block;
 }
   .title-box {
-    padding: 20px 0;
+    padding: 20px 0 30px;
     /* padding-top: 80px; */
-    margin-bottom: 20px;
     width: 80%;
-    margin: 0 auto 20px;
+    margin: 0 auto;
   }
   .title {
-    font-size: 20px;
-    font-size: 2rem;
+    font-size: 18px;
+    font-size: 1.8rem;
   }
   .btn-wrap {
-    width: 90%;
+    width: 100%;
     display: block;
-    margin: 30px auto 0;
+    margin: 0 auto;
     /* margin: 30px auto; */
   }
   .btn-first {
     margin: 0 auto;
     font-size: 25px;
     font-size: 2.5rem;
-    padding: 12px 20px;
-    width: 74%;
+    padding: 6px 20px;
+    width: 100%;
+    box-sizing: border-box;
     /* width: 84%; */
   }
   .btn-login {
     margin: 0 auto;
     font-size: 25px;
     font-size: 2.5rem;
-    padding: 12px 20px;
-    width: 74%;
+    padding: 6px 20px;
+    width: 100%;
+    box-sizing: border-box;
     /* width: 84%; */
   }
   .btn-margin {
@@ -2578,7 +2576,7 @@ html.no-scroll {
   .top-others {
     background: none;
     width: -moz-fit-content;
-    width: 100%;
+    width: 90%;
     /* width: fit-content; */
     /* border-bottom: 1px solid; */
     border-radius: initial;
@@ -2586,7 +2584,7 @@ html.no-scroll {
     font-size: 19px;
     font-size: 1.9rem;
     line-height: 1;
-    margin:20px 0 0;
+    margin:20px auto 0;
     text-decoration: underline;
 
   }
@@ -3421,7 +3419,9 @@ html.no-scroll {
     margin-bottom: 50px;
   }
   #top-main {
-    padding-top: 0px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 77px;
     /* overflow: hidden; */
   }
   .headerLogoScroll {
@@ -3431,9 +3431,10 @@ html.no-scroll {
 @media screen and (max-width: 480px) {
   .mv-top {
     background-position: 0 110px;
-    margin-bottom: 30px;
-    background-color: #FFFAF7;
+    margin-bottom: 0;
+    background-color: #FFFAEE;
     background-repeat: no-repeat;
+    padding-bottom: 86px;
   }
   input::-webkit-input-placeholder {
     font-size: 14px;
@@ -4339,7 +4340,7 @@ html.no-scroll {
   width: 240px;
   height: 50px;
   border-radius: 25px;
-  background: var(--color-button);
+  background: #CE4074;
   color: #fff;
   font-size: 16px;
   font-size: 1.6rem;
@@ -5020,4 +5021,34 @@ div#undercolumn_entry .message {
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .top-explanation::before {
+    background-image: url(../img/top-decoration_sp.png);
+    background-size: 100%;
+  }
+  .top-explanation::after {
+    background-image: url(../img/top-decoration_sp.png);
+    background-size: 100%;
+  }
+  .btn-wrap p .note {
+    padding: 25px 0 20px;
+    display: block;
+    text-align: left;
+  }
+  .inquiry__inner-top {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    line-height: 1.8;
+  }
+  .Wrapper {
+    height: 100%;
+  }
+}
+.u-error {
+  background: #FFF;
+}
+.u-error .header_inner {
+  background: none;
 }
