@@ -1137,7 +1137,7 @@ figure img{
   width: 100%;
   height: 20px;
   background-image: url(../img/bg_line.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -1175,7 +1175,7 @@ figure img{
   padding-top: 50px;
 }
 .inquiry__inner {
-  background: #EBEBEB;
+  background: #FFFAEE;
   padding-bottom: 20px;
   border-radius: 10px;
 }
@@ -1256,7 +1256,7 @@ figure img{
 }
 
 .mail {
-  background: var(--color-button);
+  background: #CE4074;
   width: 250px;
   padding: 10px 0;
   margin: 0 auto;
@@ -2929,7 +2929,7 @@ html.no-scroll {
     justify-content: space-between;
   }
   .btn-sp__tel {
-    background: var(--color-main);
+    background: #FFFAEE;
     width: -moz-fit-content;
     width: fit-content;
     display: flex;
@@ -2952,7 +2952,7 @@ html.no-scroll {
     margin-right: 5px;
   }
   .btn-sp__mail {
-    background: var(--color-main);
+    background: #FFFAEE;
     width: -moz-fit-content;
     width: fit-content;
     display: flex;
@@ -5051,4 +5051,9 @@ div#undercolumn_entry .message {
 }
 .u-error .header_inner {
   background: none;
+}
+@media screen and (max-width: 767px) {
+  #footer .footer_bg::before {
+    background-size: contain
+  }
 }
