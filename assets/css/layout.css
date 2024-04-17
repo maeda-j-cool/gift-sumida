@@ -6,7 +6,7 @@
 
 :root {
     --color-main: #EBEBEB;
-    --color-sub: #F9EDE1;
+    --color-sub: #FFFAEE;
     --color-button: #CE4074;
     --color-text: #000000;
     --color-title:#CE4074;     
@@ -6190,7 +6190,7 @@ span.modal-close img {
 .circle {
     width: 100px;
     height: 100px;
-    background-color: #f0d6c9;
+    background-color: #f5d2db;
     border-radius: 50%;
     display: flex;
     justify-content: center;
