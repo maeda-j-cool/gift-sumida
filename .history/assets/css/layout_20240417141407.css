@@ -3862,9 +3862,8 @@ input[type=text][name=addr01] {
 }
 
 .is-soldout  {
-    background: #CE4074;
-    /* background: #707070;
-    border-bottom: 5px solid #505050; */
+    background: #707070;
+    border-bottom: 5px solid #505050;
 }
 
 .p-item__table {

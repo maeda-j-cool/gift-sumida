@@ -3704,8 +3704,7 @@ input[type=text][name=addr01] {
 }
 
 .p-item__point {
-    color: #CE4074;
-    /* color: var(--color-text); */
+    color: var(--color-text);
     font-size: 35px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -3744,8 +3743,7 @@ input[type=text][name=addr01] {
     text-align: center;
     border-radius: 2px;
     margin: 10px 5px 0;
-    background: #007FAD;
-    /* background: #DD7E80; */
+    background: #DD7E80;
     color: #ffffff;
 }
 
@@ -3862,9 +3860,8 @@ input[type=text][name=addr01] {
 }
 
 .is-soldout  {
-    background: #CE4074;
-    /* background: #707070;
-    border-bottom: 5px solid #505050; */
+    background: #707070;
+    border-bottom: 5px solid #505050;
 }
 
 .p-item__table {
