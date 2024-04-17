@@ -415,7 +415,8 @@ screen and (min-width: 768px) {
 
     .p-login__goods--btn {
         background: transparent;
-        color: var(--color-main);
+        color: #000;
+        /* color: var(--color-main); */
         padding: 10px 22px;
         border-radius: 0;
         font-size: 1.6rem;
