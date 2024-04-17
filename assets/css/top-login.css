@@ -22,7 +22,8 @@
   font-size: 36px;
   font-size: 3.6rem;
   margin-bottom: 30px;
-  color: var(--color-title);
+  color: #CE4074;
+  /* color: var(--color-title); */
 }
 .login-product__title .inner {
   margin-top: 40px;

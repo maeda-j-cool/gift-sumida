@@ -7,9 +7,9 @@
 :root {
     --color-main: #EBEBEB;
     --color-sub: #F9EDE1;
-    --color-button: #D84800;
+    --color-button: #CE4074;
     --color-text: #000000;
-    --color-title:#D84800;     
+    --color-title:#CE4074;     
 }
 
 @media print, screen and (min-width: 768px) {
@@ -1707,7 +1707,8 @@ screen and (min-width: 768px) {
 .archiveLead__num {
     font-size: 1.6rem;
     font-weight: bold;
-    color: var(--color-text);
+    color: #CE4074;
+    /* color: var(--color-text); */
 }
 
 .archiveLead__anchers_pc {
