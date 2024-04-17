@@ -3546,13 +3546,13 @@ html.no-scroll {
 }
 
 .guestsBar {
-  background: var(--color-main);
+  background: #FFFAEE;
   position: relative;
 }
 
 @media screen and (max-width: 768px) {
   .guestsBar {
-    background: var(--color-main);
+    background: #FFFAEE;
   }
 }
 .guestsBar__inner {
@@ -3615,7 +3615,7 @@ html.no-scroll {
   background-repeat: no-repeat;
   background-size: cover;
   width: 27px;
-  height: 27px;
+  height: 28px;
   position: relative;
   bottom: -5px;
   margin-right: 4px;
@@ -3629,7 +3629,7 @@ html.no-scroll {
 
 .rightColumn_points {
   color: #FFFFFF;
-  background-color: var(--color-title);
+  background-color: #CE4074;
   font-family: "fot-tsukuardgothic-std", sans-serif;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 0 0 8px 8px;
@@ -3907,7 +3907,8 @@ html.no-scroll {
     font-size: 12px;
     font-size: 1.2rem;
     color: var(--color-text);
-    background: var(--color-main);
+    background: #FFFAEE;
+    /* background: var(--color-main); */
     padding: 0;
     box-shadow: none;
     border-radius: 0;
@@ -3948,7 +3949,8 @@ html.no-scroll {
     margin-top: 5px;
   }
   .utility_navigation_logo {
-    width: 300px;
+    /* width: 300px; */
+    width: 20%;
     margin-left: 15px;
   }
   #search {
@@ -5013,9 +5015,13 @@ div#undercolumn_entry .message {
 .stt-text {
   display: none;
 }
-.Wrapper {
+.inner__wrapper {
   background-color: #FFFAEE;
   height: 100vh;
+}
+.Wrapper {
+  background-color: #FFF;
+  /* height: 100vh; */
 }
 .u-textsize {
   font-size: 14px;
@@ -5055,5 +5061,8 @@ div#undercolumn_entry .message {
 @media screen and (max-width: 767px) {
   #footer .footer_bg::before {
     background-size: contain
+  }
+  .inner__wrapper {
+    height: auto;
   }
 }
