@@ -4221,11 +4221,13 @@ html.no-scroll {
 }
 
 .citizen_wrap {
-  width: 350px;
+  width: 230px;
+  /* width: 350px; */
   margin: 16px auto 0;
   min-height: 120px;
   display: grid;
-  place-items: center;
+  justify-content: flex-end;
+  /* place-items: center; */
 }
 .citizen_wrap .citizen {
   text-align: center;
