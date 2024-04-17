@@ -902,7 +902,12 @@ figure img{
   font-size: 36px;
   font-size: 3.6rem;
 }
-.connection__sub-title::after {
+.connection__text {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 12px 0 40px;
+}
+/* .connection__sub-title::after {
   content: "";
   width: 40px;
   height: 40px;
@@ -910,7 +915,7 @@ figure img{
   background-image: url(../img/connection_icon.png);
   background-repeat: no-repeat;
   margin-left: 10px;
-}
+} */
 
 .connection-box {
   display: flex;
@@ -5069,5 +5074,8 @@ div#undercolumn_entry .message {
   }
   .inner__wrapper {
     height: auto;
+  }
+  .connection__text {
+    display: none;
   }
 }
