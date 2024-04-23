@@ -386,7 +386,7 @@
   max-width: 422px;
   margin: 0 auto;
 }
-.special-feature__inner .title::before {
+/* .special-feature__inner .title::before {
   content: "";
   width: 40px;
   height: 90px;
@@ -397,8 +397,8 @@
   position: absolute;
   left: 0;
   top: 12px;
-}
-.special-feature__inner .title::after {
+} */
+/* .special-feature__inner .title::after {
   content: "";
   width: 40px;
   height: 90px;
@@ -409,7 +409,7 @@
   position: absolute;
   right: 0;
   top: 12px;
-}
+} */
 .special-feature__inner .text {
   font-size: 16px;
   font-size: 1.6rem;
